@@ -1,0 +1,364 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 48px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d1d1f;
+    background: #fff;
+}
+
+/* Navigation */
+.navbar {
+    width: 100%;
+    height: 48px;
+    background: rgba(22, 22, 23, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #f5f5f7;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.navbar a:hover {
+    color: #aaa;
+}
+
+.apple-logo {
+    font-size: 21px !important;
+}
+
+.nav-icon {
+    font-size: 20px !important;
+}
+
+/* Main product sections */
+.hero {
+    width: 100%;
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 55px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: 650;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+}
+
+.hero h2 {
+    font-size: clamp(21px, 3vw, 29px);
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.eyebrow {
+    font-size: 13px !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* iPhone 18 Pro */
+.iphone-pro {
+    color: #fff;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            transparent 70%
+        ),
+        url("https://www.apple.com/v/homepage/images/iphone-18-pro/a/hero_iphone_18_pro__fqe1motd0ymy_large.jpg");
+}
+
+/* iPhone Duo */
+.iphone-duo {
+    color: #fff;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            transparent 70%
+        ),
+        url("https://www.apple.com/v/homepage/images/iphone-duo/a/hero_iphone_duo_announce__fh4u8yzndpe2_large.jpg");
+}
+
+/* MacBook Air M5 */
+.macbook {
+    color: #1d1d1f;
+    background-color: #f5f5f7;
+    background-image: url("https://www.apple.com/v/homepage/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large.jpg");
+}
+
+/* Apple Watch Series 12 */
+.watch-series {
+    color: #fff;
+    background-color: #111;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.2),
+            transparent 70%
+        ),
+        url("https://www.apple.com/v/homepage/images/apple-watch-series-12/a/hero_apple_watch_series_12__n9rln7bzvwya_large.jpg");
+}
+
+/* Apple Watch Ultra 4 */
+.watch-ultra {
+    color: #fff;
+    background-color: #111;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            transparent 70%
+        ),
+        url("https://www.apple.com/v/homepage/images/apple-watch-ultra-4/a/promo_apple_watch_ultra_4__e4r3qertak2u_large.jpg");
+}
+
+/* Buttons */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.primary {
+    background: #0071e3;
+    color: #fff;
+    border: 1px solid #0071e3;
+}
+
+.primary:hover {
+    background: #0077ed;
+}
+
+.secondary {
+    color: #0071e3;
+    border: 1px solid #0071e3;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.secondary:hover {
+    background: #0071e3;
+    color: #fff;
+}
+
+/* iPad and AirPods grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 12px;
+}
+
+/* Product card base style */
+.product-card {
+    min-height: 550px;
+    padding: 45px 20px;
+    text-align: center;
+    background-color: #f5f5f7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.product-card h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.product-card a {
+    color: #06c;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+/* iPad Air M4 background */
+.ipad {
+    color: #1d1d1f;
+    background-image: url("https://www.apple.com/v/homepage/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large.jpg");
+}
+
+/* AirPods Pro 3 background */
+.airpods {
+    color: #1d1d1f;
+    background-image: url("https://www.apple.com/v/homepage/images/airpods-pro-3/a/promo_airpods_pro_3__e4755qofhnyq_large.jpg");
+}
+
+/* Footer */
+footer {
+    padding: 30px 20px;
+    background: #f5f5f7;
+    color: #6e6e73;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-links a,
+.back-to-top {
+    color: #06c;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.back-to-top:hover {
+    text-decoration: underline;
+}
+
+/* Responsive mobile design */
+@media (max-width: 700px) {
+    .navbar {
+        gap: 12px;
+        justify-content: space-around;
+        padding: 0 8px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 40px 14px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        padding: 8px;
+    }
+
+    .product-card {
+        min-height: 450px;
+        background-position: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        gap: 7px;
+    }
+
+    .navbar a {
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 460px;
+        padding-top: 35px;
+    }
+
+    .links {
+        gap: 8px;
+    }
+
+    .button {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .product-card h2 {
+        font-size: 32px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
+}
+
+.apple-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apple-logo img {
+  width: 20px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
